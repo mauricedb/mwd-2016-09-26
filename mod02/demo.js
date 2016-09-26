@@ -101,4 +101,11 @@ console.log('sumFn.length', sumFn.length);
 
     o2.f();
 
+
+    var f1 = function() {
+        return 1;
+    }
+
+    var f2 = () => 1;
+
 } ());
