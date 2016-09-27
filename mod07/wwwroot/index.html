@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Single Page Applications</title>
+    <script src="/libs/angular.js"></script>
+    <style>
+        .one {
+            background-color: lightgreen;
+        }
+        .two {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>07 Single Page Applications</h1>
+
+    <div ng-app="myApp">
+
+        <div ng-controller="OneController" ng-if="page !== 2" class="one">
+            <h2>Controller One</h2>
+            <p>{{msg}}</p>
+            <br>
+            <button ng-click="switch()">To two</button>
+        </div>
+
+        <div ng-controller="TwoController" ng-if="page === 2" class="two">
+            <h2>Controller Two</h2>
+            <p>{{msg}}</p>
+            <br>
+            <button ng-click="switch()">To one</button>
+        </div>
+
+    </div>
+
+    <script src="/app/main.js"></script>
+</body>
+</html>
