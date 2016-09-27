@@ -1,0 +1,17 @@
+{
+  "name": "angular-into",
+  "version": "1.0.0",
+  "description": "04_AngularJS Introduction",
+  "scripts": {
+    "start": "npm run server",
+    "server": "node ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maurice de Beijer",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "3.5.0",
+    "serve-static": "1.11.1",
+    "open": "0.0.5"
+  }
+}
