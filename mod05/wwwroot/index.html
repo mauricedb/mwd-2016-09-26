@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <title>AngularJS Directives</title>
     <script src="/libs/angular.js"></script>
+    <style>
+    .ng-scope {
+        border: 1px solid green;
+    }
+    </style>
 </head>
 
 <body>
     <h1>05 AngularJS Directives</h1>
 
     <div ng-app="myApp">
-{{1+1}}
+
+        <my-demo>I am a my-demo</my-demo>
+
+        <div my-demo=""> I have a my-demo</div>
+
     </div>
 
     <script src="/app/main.js"></script>
