@@ -11,6 +11,12 @@
 
     <div ng-app="myApp">
 
+<div ng-controller="MoviesController">
+    <ul>
+        <li ng-repeat="movie in movies" >{{movie.title}}</li>
+    </ul>
+</div>
+
     </div>
 
     <script src="/app/main.js"></script>
