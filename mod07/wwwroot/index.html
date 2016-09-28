@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Single Page Applications</title>
     <script src="/libs/angular.js"></script>
+    <script src="/libs/angular-route.js"></script>
+    
     <style>
         .one {
             background-color: lightgreen;
@@ -19,19 +21,7 @@
 
     <div ng-app="myApp">
 
-        <div ng-controller="OneController" ng-if="page !== 2" class="one">
-            <h2>Controller One</h2>
-            <p>{{msg}}</p>
-            <br>
-            <button ng-click="switch()">To two</button>
-        </div>
-
-        <div ng-controller="TwoController" ng-if="page === 2" class="two">
-            <h2>Controller Two</h2>
-            <p>{{msg}}</p>
-            <br>
-            <button ng-click="switch()">To one</button>
-        </div>
+        <div ng-view=""></div>
 
     </div>
 
