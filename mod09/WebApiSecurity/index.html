@@ -12,21 +12,6 @@
     <pre id="result"></pre>
 
     <script src="Scripts/jquery-1.10.2.js"></script>
-    <script>
-        $(function () {
-
-            $('#btnNoToken').click(function () {
-                $.ajax('/api/hello')
-                    .then(function (data) {
-                        $('#result').text(data);
-                    }, function (err) {
-                        $('#result').text(JSON.stringify(err));
-                    });
-            });
-
-
-        });
-
-    </script>
+    <script src="demo.js"></script>
 </body>
 </html>
