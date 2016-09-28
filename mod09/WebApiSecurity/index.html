@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <button id="btnNoToken">No Token</button>
+    <button id="btnWithToken">With Token</button>
+
+    <pre id="result"></pre>
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+
+            $('#btnNoToken').click(function () {
+                $.ajax('/api/hello')
+                    .then(function (data) {
+                        $('#result').text(data);
+                    }, function (err) {
+                        $('#result').text(JSON.stringify(err));
+                    });
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>
