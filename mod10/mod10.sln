@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CORS", "CORS\CORS.csproj", "{B3D50D87-484B-43CB-98BF-25E9EA039E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtherDomain", "OtherDomain\OtherDomain.csproj", "{CE756956-1CEA-4EEC-A76E-ED9A2B94FFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat", "Chat\Chat.csproj", "{0102D340-0421-42E9-BC6A-F18079E6546D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3D50D87-484B-43CB-98BF-25E9EA039E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D50D87-484B-43CB-98BF-25E9EA039E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D50D87-484B-43CB-98BF-25E9EA039E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D50D87-484B-43CB-98BF-25E9EA039E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE756956-1CEA-4EEC-A76E-ED9A2B94FFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE756956-1CEA-4EEC-A76E-ED9A2B94FFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE756956-1CEA-4EEC-A76E-ED9A2B94FFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE756956-1CEA-4EEC-A76E-ED9A2B94FFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0102D340-0421-42E9-BC6A-F18079E6546D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0102D340-0421-42E9-BC6A-F18079E6546D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0102D340-0421-42E9-BC6A-F18079E6546D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0102D340-0421-42E9-BC6A-F18079E6546D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
