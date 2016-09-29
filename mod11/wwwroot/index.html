@@ -15,7 +15,7 @@
             <button ng-click="add()">Add</button>
 
             <ul>
-                <li ng-repeat="cat in cats">
+                <li ng-repeat="cat in cats track by cat.name">
                     {{cat.name}}
                 </li>
             </ul>
@@ -25,6 +25,7 @@
     </div>
 
     <script src="/libs/angular.js"></script>
+    <script src="/libs/localforage.js"></script>
     <script src="/app/main.js"></script>
 </body>
 </html>
