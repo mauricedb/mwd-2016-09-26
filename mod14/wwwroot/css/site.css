@@ -1,45 +1,36 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-h1 {
-    text-align: center;
+body h1 {
+  text-align: center;
 }
-
-.add {
-    margin: 6px;
-    padding: 6px;
-    border: 1px solid black;
-    border-radius: 3px;
+body .add {
+  margin: 12px;
+  padding: 12px;
+  border: 2px solid blue;
+  border-radius: 3px;
 }
-
-.add button {
-    background-color: lawngreen;
-    transition: all 1s ease-in;
-    
+body .add button {
+  background-color: lawngreen;
+  transition: all 1s ease-in;
 }
-
-.add button:hover {
-    background-color: red;
-    transform: rotate(720deg);
+body .add button:hover {
+  background-color: red;
+  transform: rotate(720deg);
 }
-
-.add input {
-    font-family: fantasy;
+body .add input {
+  font-family: fantasy;
 }
-
-.cats {
-    margin: 6px;
-    padding: 6px;
-    border: 1px solid blue;
-    border-radius: 3px;
-    list-style-type: none;
+body .cats {
+  margin: 12px;
+  padding: 12px;
+  border: 5px solid blue;
+  border-radius: 3px;
+  list-style-type: none;
 }
-
-.cat:nth-child(1) {
-    color: green;
+body .cats .cat:nth-child(1) {
+  color: red;
 }
-
-.cat:nth-last-child(1) {
-    color: springgreen;
+body .cats .cat:nth-last-child(1) {
+  color: red;
 }

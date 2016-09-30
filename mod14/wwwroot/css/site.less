@@ -1,0 +1,52 @@
+@standard-padding: 12px;
+
+.default-block(@border-size : 2px) {
+    margin: @standard-padding;
+    padding: @standard-padding;
+    border: @border-size solid blue;
+    border-radius: 3px;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .add {
+        .default-block;
+
+        button {
+            background-color: lawngreen;
+            transition: all 1s ease-in;
+            
+            &:hover {
+                background-color: red;
+                transform: rotate(720deg);
+            }
+        }
+
+        input {
+            font-family: fantasy;
+        }
+    }
+
+    @cat-text-color: red;
+
+    .cats {
+        .default-block(5px);
+        list-style-type: none;
+
+        .cat:nth-child(1) {
+            color: @cat-text-color;
+        }
+
+        .cat:nth-last-child(1) {
+            color: @cat-text-color;
+        }
+    }
+}
+
