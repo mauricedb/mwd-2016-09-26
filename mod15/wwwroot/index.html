@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <h1>15 Bootstrap</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-9">
+                <div style="background-color:red;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit corporis, minus ullam quis, doloremque numquam, laudantium ut cum accusamus quae voluptatem laborum rem vel et aliquid modi veniam minima? Porro.
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-9">
+                <div style="background-color:red;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit corporis, minus ullam quis, doloremque numquam, laudantium ut cum accusamus quae voluptatem laborum rem vel et aliquid modi veniam minima? Porro.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div ng-app="myApp">
+                <div ng-controller="CatsController">
+<form>
+                    <div class="form-group">   
+                        <label>Cat name:</label>
+                         <input type="text" class="form-control" ng-model="newCat">
+                        <div class="btn-group">
+                            <button class="btn btn-primary btn-sm" ng-click="add()">Add</button>
+                            <button class="btn btn-primary btn-sm" ng-click="add()">Add</button>
+                        </div>
+                    </div>
+</form>
+                    <ul>
+                        <li ng-repeat="cat in cats track by cat.name">
+                            {{cat.name}}
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="/libs/angular.js"></script>
+    <script src="/libs/localforage.js"></script>
+    <script src="/app/main.js"></script>
+</body>
+</html>
