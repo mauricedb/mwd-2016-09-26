@@ -1,0 +1,44 @@
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter';
+
+:target{
+
+    background-color: lightblue;
+}
+
+#square {
+
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 6px;
+
+    box-shadow: -20px  10px 5px yellow;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: linear-gradient(yellow, lawngreen);
+    font-family: 'Architects Daughter', cursive;
+}
+
+button {
+    transition: all 1s;
+    background-color: white;
+}
+
+button:hover{
+    background-color: red;
+    transform: rotate(720deg);
+    transition: all 10s;
+}
+
+
+#newspaper {
+    column-width: 150px;
+    column-gap: 50px;
+    column-rule: 1px solid;
+    /*column-count: 3;*/
+}
