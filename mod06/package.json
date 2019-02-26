@@ -10,8 +10,8 @@
   "author": "Maurice de Beijer",
   "license": "MIT",
   "dependencies": {
-    "connect": "3.5.0",
-    "serve-static": "1.11.1",
+    "connect": "3.6.6",
+    "serve-static": "1.13.2",
     "open": "0.0.5"
   }
 }
